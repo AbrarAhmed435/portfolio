@@ -1,8 +1,24 @@
 .navbar{
     display: flex;
-    font-size: 1rem;
+    font-size: 1.5rem;
     align-items: center;
+    margin-top: 2px;
+   /*  border:1px solid white; */
+   margin-bottom: 3px;
+   border-bottom:2px solid white;
+   position: fixed;
+   top: 0px;
+   width: 100%;
  
+}
+.navlinks{
+    text-decoration: none;
+    color:white;
+    &:hover{
+        cursor: pointer;
+    color:yellow;
+    border-bottom-color: white;
+    }
 }
 .navbar ul{
     display: flex;
@@ -10,15 +26,15 @@
     justify-content: space-evenly;
     list-style: none;
     margin: 5px 10vw;
+    /* border:1px solid white; */
 }
 .navbar li{
      border: 2px solid black;
+     &:hover{
+        border-bottom-color: white;
+     }
 }
-.navbar li:hover{
-    cursor: pointer;
-    color:yellow;
-    border-bottom-color: white;
-}
+
 
 .navbar img{
     height: 40px;
@@ -39,7 +55,7 @@
     color: white;
     transition: transform 0.8s;
     font-size: 1rem;
-    background:linear-gradient(to right,rgb(16, 14, 14),orange,rgb(188, 6, 149));
+    background:linear-gradient(to right,rgb(216, 8, 8),orange,rgb(188, 6, 149));
     &:hover{
         transform: scale(1.1);
     }
