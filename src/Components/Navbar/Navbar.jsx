@@ -8,6 +8,8 @@ export default function Navbar() {
       <img src="../public/logo.png" alt="logo" /> 
       <ul className="nav-menu">
         <li><Link to='/' className='navlinks'>Home</Link></li>
+        {/* <li><NavLink to='/' className='navLinks'>Home</NavLink></li> */}
+        <li><Link to='/about' className='navlinks'>About77</Link></li>
         <li><Link to='/about' className='navlinks'>About</Link></li>
         <li><Link to='/projects' className='navlinks'>Projects</Link></li>
         <li><Link to='/contact' className='navlinks'>Contact</Link></li>

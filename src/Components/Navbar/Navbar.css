@@ -67,3 +67,7 @@
         display: none;
     }
 }
+
+.active{
+    color:aqua;
+}
