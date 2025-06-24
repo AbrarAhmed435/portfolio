@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body{
   height: 100vh;
@@ -21,4 +22,44 @@ body{
 }
 .Contact{
   margin-top: 50px;
+}
+.Footer{
+  background-color: steelblue;
+  height: 50px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  bottom:0;
+  width: 100%;
+}
+.Home{
+ /*  border: 2px solid White; */
+
+  margin-top: 50px;
+  min-height: 700px;
+}
+.outer-container{
+padding-top: 20px;
+padding-bottom: 20px;
+
+
+  display: flex;
+ 
+}
+.container{
+  margin-left: 200px;
+  display: flex;
+  
+}
+.passport{
+  height: 250px;
+  border-radius: 45%;
+}
+.box{
+  margin-left:100px;
+  display: flex;
+align-items: center;
+justify-content: center;
 }

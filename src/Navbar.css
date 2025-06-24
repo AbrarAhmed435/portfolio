@@ -2,13 +2,14 @@
     display: flex;
     font-size: 1.5rem;
     align-items: center;
-    margin-top: 2px;
+    margin-top: 1px;
    /*  border:1px solid white; */
    margin-bottom: 3px;
    border-bottom:2px solid white;
    position: fixed;
    top: 0px;
    width: 100%;
+   background-color: black;
  
 }
 .navlinks{
@@ -16,7 +17,7 @@
     color:white;
     &:hover{
         cursor: pointer;
-    color:yellow;
+    color:rgb(2, 219, 187);
     border-bottom-color: white;
     }
 }
@@ -31,7 +32,7 @@
 .navbar li{
      border: 2px solid black;
      &:hover{
-        border-bottom-color: white;
+        border-bottom-color: rgb(255, 255, 255);
      }
 }
 
@@ -69,5 +70,8 @@
 }
 
 .active{
-    color:aqua;
+    border-radius: 5px;
+    background-color: white;
+    color:rgb(18, 19, 19);
+        
 }
