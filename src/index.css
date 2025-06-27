@@ -5,23 +5,23 @@
 }
 body{
   height: 100vh;
-  background-color: #161513;
+  background-color: #2a2a29;
   color:white;
 }
 .Home{
-  margin-top: 50px;
+  margin-top: 60px;
 }
 .Others{
-  margin-top: 50px;
+  margin-top: 60px;
 }
 .Projects{
-  margin-top: 50px;
+  margin-top:60px;
 }
 .About{
-  margin-top: 50px;
+  margin-top: 60px;
 }
 .Contact{
-  margin-top: 50px;
+  margin-top: 60px;
 }
 .Footer{
   background-color: steelblue;
@@ -43,23 +43,41 @@ body{
 .outer-container{
 padding-top: 20px;
 padding-bottom: 20px;
-
-
-  display: flex;
- 
+display: flex;
+border-bottom: 1px solid rgb(167, 156, 156);
 }
 .container{
-  margin-left: 200px;
+ 
   display: flex;
-  
+
+  width: 100vw;
+/*   border:1px solid rgb(126, 11, 11); */
 }
 .passport{
+margin-left: 50px;
   height: 250px;
-  border-radius: 45%;
+  
+  border-radius: 40px;
 }
 .box{
+  /* border:1px solid white; */
   margin-left:100px;
   display: flex;
 align-items: center;
 justify-content: center;
+}
+.history-title{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 2rem;
+}
+@media (max-width:700px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
 }

@@ -1,77 +1,128 @@
-.navbar{
+/* --- Base Navbar Styling --- */
+.navbar {
     display: flex;
-    font-size: 1.5rem;
     align-items: center;
-    margin-top: 1px;
-   /*  border:1px solid white; */
-   margin-bottom: 3px;
-   border-bottom:2px solid white;
-   position: fixed;
-   top: 0px;
-   width: 100%;
-   background-color: black;
- 
+    justify-content: space-between;
+    font-size: 1.5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    border-bottom: 2px solid white;
+    padding: 0.5rem 1rem;
+    z-index: 1000;
 }
-.navlinks{
-    text-decoration: none;
-    color:white;
-    &:hover{
-        cursor: pointer;
-    color:rgb(2, 219, 187);
-    border-bottom-color: white;
-    }
+
+/* Logo */
+.navbar img {
+    height: 40px;
+    margin-left: 0.1rem;
+    margin-right: 40px;
 }
-.navbar ul{
+
+/* --- Nav Menu --- */
+.nav-menu {
     display: flex;
-   
-    justify-content: space-evenly;
+    flex-direction: row;
+    /* align-items: center; */
     list-style: none;
-    margin: 5px 10vw;
-    /* border:1px solid white; */
-}
-.navbar li{
-     border: 2px solid black;
-     &:hover{
-        border-bottom-color: rgb(255, 255, 255);
-     }
+    width:50vw;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
 }
 
-
-.navbar img{
-    height: 40px;
-    margin-left: 5px;
-    margin-top: 5px;
-  
-}
-.nav-menu{
-    display: flex;
-    width: 50vw;
-}
-.nav-connect{
-    padding: 3px;
-    width: 140px;
-    height: 40px;
-    border-radius: 10px;
-    outline: none;
-    color: white;
-    transition: transform 0.8s;
-    font-size: 1rem;
-    background:linear-gradient(to right,rgb(216, 8, 8),orange,rgb(188, 6, 149));
-    &:hover{
-        transform: scale(1.1);
-    }
+/* Nav Items */
+.navbar li {
+    border: 2px solid black;
     
 }
 
-@media (max-width:768px){
-    .navbar{
-        display: none;
-    }
+.navbar li:hover {
+    border-bottom-color: white;
 }
 
-.active{
+/* Nav Links */
+.navlinks {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.navlinks:hover {
+    cursor: pointer;
+    color: rgb(2, 219, 187);
+    border-bottom-color: white;
+}
+
+/* Active Link Styling */
+.active {
     border-radius: 5px;
     background-color: white;
-    color:rgb(18, 19, 19);
-        
+    color: rgb(18, 19, 19);
+    padding: 0.2rem 0.5rem;
+}
+
+/* Connect Button */
+.nav-connect {
+    padding: 8px 16px;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+    background: linear-gradient(to right, rgb(216, 8, 8), orange, rgb(188, 6, 149));
+    border: none;
+    margin-left: auto;
+}
+
+.nav-connect:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* --- Hamburger Menu --- */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+/* --- Responsive Styles --- */
+@media (max-width: 600px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        padding: 1rem 0;
+        gap: 1rem;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-connect {
+        display: none; /* You can move this into the nav-menu if needed */
+    }
 }
