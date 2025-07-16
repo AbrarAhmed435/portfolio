@@ -15,19 +15,13 @@ export default function Home() {
             alt=""
             className="passport"
           />
-          <div className="box">
-            <h2 className="typewriter">
+          <div className="box" style={{border:'1px solid yellow'}}>
+            {/* <h2 className="typewriter">
               Hi👋, I am Abrar
               <br /> IT UNDERGRADUATE
-            </h2>
-          </div>
-        </div>
-      </div>
-      <div className="history">
-        {/* <h3 className="history-title">
-          
-        </h3> */}
-        <h3 className="history-title">
+            </h2> */}
+            <h3 className="history-title" style={{border:'1px solid yellow'}}>
+        
           I am an IT Student &{" "}
           <span style={{color:'#00ffff',fontWeight:'bold'}}>
             <Typewriter
@@ -41,6 +35,76 @@ export default function Home() {
             />
           </span>
         </h3>
+          </div>
+        </div>
+      </div>
+      <div className="history">
+        {/* <h3 className="history-title">
+          
+        </h3> */}
+        {/* <h3 className="history-title">
+          I am an IT Student &{" "}
+          <span style={{color:'#00ffff',fontWeight:'bold'}}>
+            <Typewriter
+            words={['Full Stack Developer','Web Explorer','AI Enthusiast']}
+            loop={0}
+            cursor
+            cursorStyle="_"
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1500}
+            />
+          </span>
+        </h3> */}
+        <h3 className="skill-heading">My Skills</h3>
+        <div className="skills">
+    
+  <div className="skill-box">
+    <div className="skill-element">
+     {/*  <FaReact color="#61dafb" size={40} /> */}
+     <img src="../public/icons8-c.svg" alt="" />
+      <p>C</p>
+    </div>
+    <div className="skill-element">
+     {/*  <FaReact color="#61dafb" size={40} /> */}
+     <img src="../public/cplusplus.svg" alt="" />
+      <p>C++</p>
+    </div>
+    <div className="skill-element">
+     {/*  <FaReact color="#61dafb" size={40} /> */}
+     <img src="../public/icons8-python.svg" alt="" />
+      <p>python</p>
+    </div>
+    <div className="skill-element">
+     {/*  <FaReact color="#61dafb" size={40} /> */}
+     <img src="../public/html-5-svgrepo-com.svg" alt="" />
+      <p>HTML</p>
+    </div>
+    <div className="skill-element">
+     {/*  <FaReact color="#61dafb" size={40} /> */}
+     <img src="../public/icons8-css.svg" alt="" />
+      <p>CSS</p>
+    </div>
+    <div className="skill-element">
+     {/*  <FaReact color="#61dafb" size={40} /> */}
+     <img src="../public/icons8-javascript.svg" alt="" />
+      <p>JavaScript</p>
+    </div>
+    <div className="skill-element">
+     {/*  <FaReact color="#61dafb" size={40} /> */}
+     <img src="../public/react-svgrepo-com.svg" alt="" />
+      <p>React</p>
+    </div>
+    <div className="skill-element">
+     {/*  <FaReact color="#61dafb" size={40} /> */}
+     <img src="../public/django-svgrepo-com.svg" alt="" />
+      <p>Django</p>
+    </div>
+    
+    {/* Add more skill cards here */}
+  </div>
+</div>
+
         <div className="brief-history">
           <h2 style={{ textDecoration: "underline" }}>
             Brief History About Me
@@ -52,6 +116,20 @@ export default function Home() {
             websites and ML models, I’ve always been driven by the urge to
             create and learn. I'm currently focused on full-stack development
             and AI applications.
+            <Link to="/about" className="knowmore">
+              {" "}
+              Know more
+            </Link>
+          </p>
+        </div>
+        <div className="brief-project">
+          <h2 style={{ textDecoration: "underline" }}>
+            My Projects
+            <br />
+            <br />
+          </h2>
+          <p style={{ fontSize: "1.2rem" }}>
+            Projects building is something which is love to do whether it's Full Stack of AI i have dived deep into both.
             <Link to="/about" className="knowmore">
               {" "}
               Know more

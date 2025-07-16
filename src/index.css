@@ -11,6 +11,7 @@ body{
 .Home{
   margin-top: 60px;
   background-color: rgb(38, 37, 37);
+  padding-bottom: 50px;
 }
 .Others{
   margin-top: 60px;
@@ -78,6 +79,64 @@ justify-content: center;
   text-align: center;
   font-size: 2rem;
 }
+.skills {
+  /* border: 2px solid cyan; */
+  margin:2rem auto;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+ 
+}
+.skill-heading{
+  margin-top: 20px;
+  color:cyan;
+  font-size: 2rem;
+  text-align: center;
+}
+.skill-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+/* Card style for each skill */
+.skill-element {
+  background-color: rgba(0, 255, 255, 0.5); /* subtle cyan tint */
+  border: 1px solid #00ffff;
+  border-radius: 12px;
+  padding: 1.2rem;
+  width: 120px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 255, 255, 0.);
+  color: #f0f0f0;
+}
+
+.skill-element:hover {
+  transform: perspective(800px) rotateX(10deg) rotateY(10deg) scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 255, 255, 0.35);
+}
+
+
+/* Icon inside skill card */
+.skill-element img,
+.skill-element svg {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0.5rem;
+}
+
+/* Label */
+.skill-element p {
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+
 .history{
   padding: 4px;
 }
@@ -121,6 +180,38 @@ justify-content: center;
 }
 
 .brief-history p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+.brief-project {
+  border: 1.5px solid #00ffff; /* soft cyan border */
+  margin: 2rem auto;
+  border-radius: 12px;
+  color: #f0f0f0;
+  background: rgba(0, 0, 0, 0.4); /* subtle background glass effect */
+  backdrop-filter: blur(4px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2);
+  width: 85%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+}
+
+.brief-project:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.35);
+}
+
+.brief-project h2 {
+  font-size: 1.8rem;
+  color: #00ffff;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.brief-project p {
   font-size: 1.15rem;
   line-height: 1.6;
   text-align: justify;
