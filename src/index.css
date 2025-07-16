@@ -5,11 +5,12 @@
 }
 body{
   height: 100vh;
-  background-color: #2a2a29;
-  color:white;
+  
+  color:black;
 }
 .Home{
   margin-top: 60px;
+  background-color: rgb(38, 37, 37);
 }
 .Others{
   margin-top: 60px;
@@ -25,6 +26,7 @@ body{
 }
 .Footer{
   background-color: steelblue;
+  color:white;
   height: 50px;
   position: fixed;
   display: flex;
@@ -41,10 +43,13 @@ body{
   min-height: 700px;
 }
 .outer-container{
+  /* background:linear-gradient(to right,black,green,yellow,rgb(213, 2, 19),black); */
+  background-color: rgb(38, 37, 37);
 padding-top: 20px;
+color:white;
 padding-bottom: 20px;
 display: flex;
-border-bottom: 1px solid rgb(167, 156, 156);
+border-bottom: 4px solid rgb(167, 156, 156);
 }
 .container{
  
@@ -62,16 +67,95 @@ margin-left: 50px;
 .box{
   /* border:1px solid white; */
   margin-left:100px;
+  color:#2a2a29;
   display: flex;
 align-items: center;
 justify-content: center;
 }
 .history-title{
   margin-top: 20px;
+  color:#f4f4ef;
   text-align: center;
   font-size: 2rem;
 }
-@media (max-width:700px) {
+.history{
+  padding: 4px;
+}
+.typewriter {
+ /*  font-family: 'Courier New', monospace; */
+  color: #f0e8e8;
+
+  overflow: hidden;
+  /* border-right: 2px solid orange; */
+  white-space: nowrap;
+  display: inline-block;
+  font-size: 2rem;
+  animation: typing 2s steps(30, end) forwards, blink 0.4s step-end infinite;
+  width: 0;
+}
+
+.brief-history {
+  border: 1.5px solid #00ffff; /* soft cyan border */
+  margin: 2rem auto;
+  border-radius: 12px;
+  color: #f0f0f0;
+  background: rgba(0, 0, 0, 0.4); /* subtle background glass effect */
+  backdrop-filter: blur(4px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2);
+  width: 85%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.brief-history:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.35);
+}
+
+.brief-history h2 {
+  font-size: 1.8rem;
+  color: #00ffff;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.brief-history p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.knowmore {
+  color: #00ffff;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 0.3rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.knowmore:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 26ch; /* Set this to match total characters */
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@media (max-width:840px) {
   .container{
     display: flex;
     flex-direction: column;

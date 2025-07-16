@@ -23,6 +23,7 @@
     "react-leaflet": "^5.0.0",
     "react-loaders": "^3.0.1",
     "react-router-dom": "^7.6.2",
+    "react-simple-typewriter": "^5.0.1",
     "sass": "^1.89.2"
   },
   "devDependencies": {
