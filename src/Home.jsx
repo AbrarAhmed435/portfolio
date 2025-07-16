@@ -3,6 +3,7 @@ import { MdComputer } from "react-icons/md";
 import { FaInternetExplorer } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
+import { FaGithubSquare } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -15,15 +16,13 @@ export default function Home() {
             alt=""
             className="passport"
           />
-          <div className="box">
+          <div className="box" >
             {/* <h2 className="typewriter">
               Hi👋, I am Abrar
               <br /> IT UNDERGRADUATE
             </h2> */}
-           <h2 style={{color:'white', fontSize:'2rem'}}>Hi👋, I am Abrar</h2>
-            <h3
-              className="history-title"
-            >
+            <h2 style={{ color: "white", fontSize: "2rem" }}>Hi, I am Abrar</h2>
+            <h3 className="history-title">
               I am an IT Student &{" "}
               <span style={{ color: "#00ffff", fontWeight: "bold" }}>
                 <Typewriter
@@ -41,38 +40,36 @@ export default function Home() {
                 />
               </span>
             </h3>
+            <a
+              href="https://github.com/AbrarAhmed435/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: "white",
+                fontSize: "1.5rem",
+                marginTop: "1rem",
+                display: "inline-block",
+                textDecoration:'none'
+              }}
+            >
+              check out my github profile{" "}
+              <FaGithubSquare style={{ verticalAlign: "middle" }} />
+            </a>
           </div>
         </div>
       </div>
       <div className="history">
-        {/* <h3 className="history-title">
-          
-        </h3> */}
-        {/* <h3 className="history-title">
-          I am an IT Student &{" "}
-          <span style={{color:'#00ffff',fontWeight:'bold'}}>
-            <Typewriter
-            words={['Full Stack Developer','Web Explorer','AI Enthusiast']}
-            loop={0}
-            cursor
-            cursorStyle="_"
-            typeSpeed={70}
-            deleteSpeed={50}
-            delaySpeed={1500}
-            />
-          </span>
-        </h3> */}
         <h3 className="skill-heading">My Skills</h3>
         <div className="skills">
           <div className="skill-box">
             <div className="skill-element">
               {/*  <FaReact color="#61dafb" size={40} /> */}
-              <img src="icons8-c.svg" alt="" />
+              <img src="icons8-c (2).svg" alt="" />
               <p>C</p>
             </div>
             <div className="skill-element">
               {/*  <FaReact color="#61dafb" size={40} /> */}
-              <img src="cplusplus.svg" alt="" />
+              <img src="icons8-c.svg" alt="" />
               <p>C++</p>
             </div>
             <div className="skill-element">
@@ -105,8 +102,6 @@ export default function Home() {
               <img src="icons8-css.svg" alt="" />
               <p>CSS</p>
             </div>
-            
-            
 
             {/* Add more skill cards here */}
           </div>
