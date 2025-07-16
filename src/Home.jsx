@@ -2,7 +2,7 @@ import { FaHistory } from "react-icons/fa";
 import { MdComputer } from "react-icons/md";
 import { FaInternetExplorer } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import {Typewriter} from 'react-simple-typewriter'; 
+import { Typewriter } from "react-simple-typewriter";
 
 export default function Home() {
   return (
@@ -15,26 +15,32 @@ export default function Home() {
             alt=""
             className="passport"
           />
-          <div className="box" style={{border:'1px solid yellow'}}>
+          <div className="box">
             {/* <h2 className="typewriter">
               Hi👋, I am Abrar
               <br /> IT UNDERGRADUATE
             </h2> */}
-            <h3 className="history-title" style={{border:'1px solid yellow'}}>
-        
-          I am an IT Student &{" "}
-          <span style={{color:'#00ffff',fontWeight:'bold'}}>
-            <Typewriter
-            words={['Full Stack Developer','Web Explorer','AI Enthusiast']}
-            loop={0}
-            cursor
-            cursorStyle="_"
-            typeSpeed={70}
-            deleteSpeed={50}
-            delaySpeed={1500}
-            />
-          </span>
-        </h3>
+           <h2 style={{color:'white', fontSize:'2rem'}}>Hi👋, I am Abrar</h2>
+            <h3
+              className="history-title"
+            >
+              I am an IT Student &{" "}
+              <span style={{ color: "#00ffff", fontWeight: "bold" }}>
+                <Typewriter
+                  words={[
+                    "Full Stack Developer",
+                    "Web Explorer",
+                    "AI Enthusiast",
+                  ]}
+                  loop={0}
+                  cursor
+                  cursorStyle="_"
+                  typeSpeed={70}
+                  deleteSpeed={50}
+                  delaySpeed={1500}
+                />
+              </span>
+            </h3>
           </div>
         </div>
       </div>
@@ -58,52 +64,53 @@ export default function Home() {
         </h3> */}
         <h3 className="skill-heading">My Skills</h3>
         <div className="skills">
-    
-  <div className="skill-box">
-    <div className="skill-element">
-     {/*  <FaReact color="#61dafb" size={40} /> */}
-     <img src="../public/icons8-c.svg" alt="" />
-      <p>C</p>
-    </div>
-    <div className="skill-element">
-     {/*  <FaReact color="#61dafb" size={40} /> */}
-     <img src="../public/cplusplus.svg" alt="" />
-      <p>C++</p>
-    </div>
-    <div className="skill-element">
-     {/*  <FaReact color="#61dafb" size={40} /> */}
-     <img src="../public/icons8-python.svg" alt="" />
-      <p>python</p>
-    </div>
-    <div className="skill-element">
-     {/*  <FaReact color="#61dafb" size={40} /> */}
-     <img src="../public/html-5-svgrepo-com.svg" alt="" />
-      <p>HTML</p>
-    </div>
-    <div className="skill-element">
-     {/*  <FaReact color="#61dafb" size={40} /> */}
-     <img src="../public/icons8-css.svg" alt="" />
-      <p>CSS</p>
-    </div>
-    <div className="skill-element">
-     {/*  <FaReact color="#61dafb" size={40} /> */}
-     <img src="../public/icons8-javascript.svg" alt="" />
-      <p>JavaScript</p>
-    </div>
-    <div className="skill-element">
-     {/*  <FaReact color="#61dafb" size={40} /> */}
-     <img src="../public/react-svgrepo-com.svg" alt="" />
-      <p>React</p>
-    </div>
-    <div className="skill-element">
-     {/*  <FaReact color="#61dafb" size={40} /> */}
-     <img src="../public/django-svgrepo-com.svg" alt="" />
-      <p>Django</p>
-    </div>
-    
-    {/* Add more skill cards here */}
-  </div>
-</div>
+          <div className="skill-box">
+            <div className="skill-element">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="icons8-c.svg" alt="" />
+              <p>C</p>
+            </div>
+            <div className="skill-element">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="cplusplus.svg" alt="" />
+              <p>C++</p>
+            </div>
+            <div className="skill-element">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="icons8-python.svg" alt="" />
+              <p>python</p>
+            </div>
+            <div className="skill-element">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="icons8-javascript.svg" alt="" />
+              <p>JavaScript</p>
+            </div>
+            <div className="skill-element">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="react-svgrepo-com.svg" alt="" />
+              <p>React</p>
+            </div>
+            <div className="skill-element">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="django-svgrepo-com.svg" alt="" />
+              <p>Django</p>
+            </div>
+            <div className="skill-element">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="html-5-svgrepo-com.svg" alt="" />
+              <p>HTML</p>
+            </div>
+            <div className="skill-element">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="icons8-css.svg" alt="" />
+              <p>CSS</p>
+            </div>
+            
+            
+
+            {/* Add more skill cards here */}
+          </div>
+        </div>
 
         <div className="brief-history">
           <h2 style={{ textDecoration: "underline" }}>
@@ -129,7 +136,8 @@ export default function Home() {
             <br />
           </h2>
           <p style={{ fontSize: "1.2rem" }}>
-            Projects building is something which is love to do whether it's Full Stack of AI i have dived deep into both.
+            Projects building is something which is love to do whether it's Full
+            Stack of AI i have dived deep into both.
             <Link to="/about" className="knowmore">
               {" "}
               Know more
