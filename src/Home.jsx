@@ -1,11 +1,21 @@
-import { FaHistory } from "react-icons/fa";
-import { MdComputer } from "react-icons/md";
-import { FaInternetExplorer } from "react-icons/fa6";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // AOS styles
+
 import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 import { FaGithubSquare } from "react-icons/fa";
+import { useEffect } from "react";
 
+
+/* https://michalsnik.github.io/aos/ */
 export default function Home() {
+  useEffect(() => {
+  AOS.init({
+    duration: 500, // Animation duration in ms
+    once: false,     // Whether animation should happen only once
+  });
+}, []);
+
   return (
     <div className="Home">
       <div className="outer-container">
@@ -16,7 +26,7 @@ export default function Home() {
             alt=""
             className="passport"
           />
-          <div className="box" >
+          <div className="box">
             {/* <h2 className="typewriter">
               Hi👋, I am Abrar
               <br /> IT UNDERGRADUATE
@@ -49,7 +59,7 @@ export default function Home() {
                 fontSize: "1.5rem",
                 marginTop: "1rem",
                 display: "inline-block",
-                textDecoration:'none'
+                textDecoration: "none",
               }}
             >
               check out my github profile{" "}
@@ -62,42 +72,42 @@ export default function Home() {
         <h3 className="skill-heading">My Skills</h3>
         <div className="skills">
           <div className="skill-box">
-            <div className="skill-element">
+            <div className="skill-element" data-aos="fade-down">
               {/*  <FaReact color="#61dafb" size={40} /> */}
               <img src="icons8-c (2).svg" alt="" />
               <p>C</p>
             </div>
-            <div className="skill-element">
+            <div className="skill-element" data-aos="fade-down">
               {/*  <FaReact color="#61dafb" size={40} /> */}
               <img src="icons8-c.svg" alt="" />
               <p>C++</p>
             </div>
-            <div className="skill-element">
+            <div className="skill-element" data-aos="fade-down">
               {/*  <FaReact color="#61dafb" size={40} /> */}
               <img src="icons8-python.svg" alt="" />
               <p>python</p>
             </div>
-            <div className="skill-element">
+            <div className="skill-element" data-aos="fade-down">
               {/*  <FaReact color="#61dafb" size={40} /> */}
               <img src="icons8-javascript.svg" alt="" />
               <p>JavaScript</p>
             </div>
-            <div className="skill-element">
+            <div className="skill-element" data-aos="fade-down">
               {/*  <FaReact color="#61dafb" size={40} /> */}
               <img src="react-svgrepo-com.svg" alt="" />
               <p>React</p>
             </div>
-            <div className="skill-element">
+            <div className="skill-element" data-aos="fade-down">
               {/*  <FaReact color="#61dafb" size={40} /> */}
               <img src="django-svgrepo-com.svg" alt="" />
               <p>Django</p>
             </div>
-            <div className="skill-element">
+            <div className="skill-element" data-aos="fade-down">
               {/*  <FaReact color="#61dafb" size={40} /> */}
               <img src="html-5-svgrepo-com.svg" alt="" />
               <p>HTML</p>
             </div>
-            <div className="skill-element">
+            <div className="skill-element" data-aos="fade-down">
               {/*  <FaReact color="#61dafb" size={40} /> */}
               <img src="icons8-css.svg" alt="" />
               <p>CSS</p>
@@ -107,7 +117,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="brief-history">
+        <div className="brief-history" data-aos="zoom-in">
           <h2 style={{ textDecoration: "underline" }}>
             Brief History About Me
             <br />
@@ -124,7 +134,7 @@ export default function Home() {
             </Link>
           </p>
         </div>
-        <div className="brief-project">
+        <div className="brief-project" data-aos="zoom-in">
           <h2 style={{ textDecoration: "underline" }}>
             My Projects
             <br />
@@ -133,7 +143,7 @@ export default function Home() {
           <p style={{ fontSize: "1.2rem" }}>
             Projects building is something which is love to do whether it's Full
             Stack of AI i have dived deep into both.
-            <Link to="/about" className="knowmore">
+            <Link to="/projects" className="knowmore">
               {" "}
               Know more
             </Link>
