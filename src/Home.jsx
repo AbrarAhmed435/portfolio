@@ -1,78 +1,101 @@
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // AOS styles
+import AOS from "aos";
+import "aos/dist/aos.css"; // AOS styles
 
 import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 import { FaGithubSquare } from "react-icons/fa";
 import { useEffect } from "react";
 
-
 /* https://michalsnik.github.io/aos/ */
 export default function Home() {
   useEffect(() => {
-  AOS.init({
-    duration: 500, // Animation duration in ms
-    once: false,     // Whether animation should happen only once
-  });
-}, []);
+    AOS.init({
+      duration: 1000, // Animation duration in ms
+      once: false, // Whether animation should happen only once
+    });
+  }, []);
 
   return (
     <div className="Home">
       <div className="outer-container">
         <div className="container">
-          {/* https://undraw.co/illustrations */}
-          <img
-            src="../public/undraw_coding_joxb.svg"
-            alt=""
-            className="passport"
-          />
-          <div className="box">
-            {/* <h2 className="typewriter">
-              Hi👋, I am Abrar
-              <br /> IT UNDERGRADUATE
-            </h2> */}
-            <h2 style={{ color: "white", fontSize: "2rem" }}>Hi, I am Abrar</h2>
-            <h3 className="history-title">
-              I am an IT Student &{" "}
-              <span style={{ color: "#00ffff", fontWeight: "bold" }}>
-                <Typewriter
-                  words={[
-                    "Full Stack Developer",
-                    "Web Explorer",
-                    "AI Enthusiast",
-                  ]}
-                  loop={0}
-                  cursor
-                  cursorStyle="_"
-                  typeSpeed={70}
-                  deleteSpeed={50}
-                  delaySpeed={1500}
-                />
-              </span>
-            </h3>
-            <a
-              href="https://github.com/AbrarAhmed435/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                color: "white",
-                fontSize: "1.5rem",
-                marginTop: "1rem",
-                display: "inline-block",
-                textDecoration: "none",
-              }}
-            >
-              check out my github profile{" "}
-              <FaGithubSquare style={{ verticalAlign: "middle" }} />
-            </a>
-          </div>
+          {/* Use image path correctly */}
+          <img src="/undraw_coding_joxb.svg" alt="Coding Illustration" />
+        </div>
+        <div className="box">
+          <h2 className="heading">Hi, I am Abrar</h2>
+          <h3 className="introduction">
+            I am an IT Student &{" "}
+            <span className="highlighted">
+              <Typewriter
+                words={[
+                  "Full Stack Developer",
+                  "Web Explorer",
+                  "AI Enthusiast",
+                ]}
+                loop={0}
+                cursor
+                cursorStyle="_"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1500}
+              />
+            </span>
+          </h3>
+          <a
+            href="https://github.com/AbrarAhmed435/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="github-link"
+          >
+            check out my github profile{" "}
+            <FaGithubSquare style={{ verticalAlign: "middle" }} />
+          </a>
         </div>
       </div>
-      <div className="history">
-        <h3 className="skill-heading">My Skills</h3>
-        <div className="skills">
+      <h3 className="skill-heading">My Skills</h3>
+      <div className="skills">
+        <div className="skill-class" data-aos="fade-down">
+          <h4>FRONTEND</h4>
           <div className="skill-box">
             <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="icons8-javascript.svg" alt="" />
+              <p>JAVASCRIPT</p>
+            </div>
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="react-svgrepo-com.svg" alt="" />
+              <p>REACT</p>
+            </div>
+            
+
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="html-5-svgrepo-com.svg" alt="" />
+              <p>HTML</p>
+            </div>
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="icons8-css.svg" alt="" />
+              <p>CSS</p>
+            </div>
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="tailwind-svgrepo-com.svg" alt="" />
+              <p>TAILWIND</p>
+            </div>
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="bootstrap-svgrepo-com.svg" alt="" />
+              <p>BOOTSTRAP</p>
+            </div>
+          </div>
+        </div>
+         <div className="skill-class" data-aos="fade-down">
+          <h4>BACKEND</h4>
+          <div className="skill-box">
+             <div className="skill-element" data-aos="fade-down">
               {/*  <FaReact color="#61dafb" size={40} /> */}
               <img src="icons8-c (2).svg" alt="" />
               <p>C</p>
@@ -89,35 +112,138 @@ export default function Home() {
             </div>
             <div className="skill-element" data-aos="fade-down">
               {/*  <FaReact color="#61dafb" size={40} /> */}
-              <img src="icons8-javascript.svg" alt="" />
-              <p>JavaScript</p>
-            </div>
-            <div className="skill-element" data-aos="fade-down">
-              {/*  <FaReact color="#61dafb" size={40} /> */}
-              <img src="react-svgrepo-com.svg" alt="" />
-              <p>React</p>
-            </div>
-            <div className="skill-element" data-aos="fade-down">
-              {/*  <FaReact color="#61dafb" size={40} /> */}
               <img src="django-svgrepo-com.svg" alt="" />
               <p>Django</p>
             </div>
-            <div className="skill-element" data-aos="fade-down">
-              {/*  <FaReact color="#61dafb" size={40} /> */}
-              <img src="html-5-svgrepo-com.svg" alt="" />
-              <p>HTML</p>
-            </div>
-            <div className="skill-element" data-aos="fade-down">
-              {/*  <FaReact color="#61dafb" size={40} /> */}
-              <img src="icons8-css.svg" alt="" />
-              <p>CSS</p>
-            </div>
-
-            {/* Add more skill cards here */}
+            
           </div>
         </div>
-
-        <div className="brief-history" data-aos="zoom-in">
+        <div className="skill-class" data-aos="fade-down">
+          <h4>DATABASES</h4>
+          <div className="skill-box">
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="redux-logo-svgrepo-com.svg" alt="" />
+              <p>REDUX</p>
+            </div>
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="database-svgrepo-com.svg" alt="" />
+              <p>SQL</p>
+            </div>
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="mongo-svgrepo-com.svg" alt="" />
+              <p>MONGODB</p>
+            </div>
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="elephant (1).svg" alt="" />
+              <p>POSTGRESQL</p>
+            </div>
+          </div>
+        </div>
+        <div className="skill-class" data-aos="fade-down">
+          <h4>AI/Ml</h4>
+          <div className="skill-box">
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="numpy-svgrepo-com.svg" alt="" />
+              <p>NUMPY</p>
+            </div>
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="pandas-svgrepo-com.svg" alt="" />
+              <p>PANDAS</p>
+            </div>
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="icons8-matplotlib.svg" alt="" />
+              <p>MATPLOTLIB</p>
+            </div>
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="pytorch-svgrepo-com.svg" alt="" />
+              <p>PYTORCH</p>
+            </div>
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="scikit-learn-logo-small.svg" alt="" />
+              <p>SCIKIT LEARN</p>
+            </div>
+          </div>
+          
+        </div>
+        <div className="skill-class" data-aos="fade-down">
+          <h4>TOOLS AND IDEs</h4>
+          <div className="skill-box">
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="vscode3-svgrepo-com.svg" alt="" />
+              <p>VSCODE</p>
+            </div>
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="jupy.svg" alt="" />
+              <p>JUPYTER<br></br>NOTEBOOK</p>
+            </div>
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="googleco.svg" alt="" />
+              <p>GOOGLE<br/>COLABS</p>
+            </div>
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="icons8-code-blocks.svg" alt="" />
+              <p>CODE::BLOCKS</p>
+            </div>
+          </div>
+        </div>
+        <div className="skill-class" data-aos="fade-down">
+          <h4>VERSION CONTROL AND API</h4>
+          <div className="skill-box">
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="git-merge-svgrepo-com.svg" alt="" />
+              <p>GIT</p>
+            </div>
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="github-svgrepo-com.svg" alt="" />
+              <p>GITHUB</p>
+            </div>
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="hug.svg" alt="" />
+              <p>HUGGING <br/>FACE</p>
+            </div>
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="thunder-client.svg" alt="" />
+              <p>THUNDER CLIENT</p>
+            </div>
+            
+          </div>
+          
+        </div>
+        {/* Add more skill cards here */}
+      </div>
+      <div className="brief-project" data-aos="zoom-in">
+          <h2 style={{ textDecoration: "underline" }}>
+            My Projects
+            <br />
+            <br />
+          </h2>
+          <p style={{ fontSize: "1.2rem" }}>
+            Projects building is something which is love to do whether it's Full
+            Stack of AI i have dived deep into both.
+            <Link to="/projects" className="knowmore">
+              {" "}
+              Know more
+            </Link>
+          </p>
+        </div>
+      <div className="brief-history" data-aos="zoom-in">
           <h2 style={{ textDecoration: "underline" }}>
             Brief History About Me
             <br />
@@ -134,22 +260,9 @@ export default function Home() {
             </Link>
           </p>
         </div>
-        <div className="brief-project" data-aos="zoom-in">
-          <h2 style={{ textDecoration: "underline" }}>
-            My Projects
-            <br />
-            <br />
-          </h2>
-          <p style={{ fontSize: "1.2rem" }}>
-            Projects building is something which is love to do whether it's Full
-            Stack of AI i have dived deep into both.
-            <Link to="/projects" className="knowmore">
-              {" "}
-              Know more
-            </Link>
-          </p>
-        </div>
-      </div>
+        
+
+      {/* </div> */}
     </div>
   );
 }
