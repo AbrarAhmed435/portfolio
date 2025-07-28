@@ -8,6 +8,7 @@ import {
   SiFlask,
   SiHtml5,
   SiPytorch,
+  SiOpencv,
 } from "react-icons/si";
 
 export default function Projects() {
@@ -19,9 +20,57 @@ export default function Projects() {
   }, []);
 
   return (
+    <div>
+      <div className="project-nav">
+        <p>
+          <a href="#Aiml">AI/ML</a>
+        </p>
+        <p>
+          <a href="#fullstack">FullStack</a>
+        </p>
+      </div>
     <div className="Projects">
-      <div className="project-class">
+      
+      <div className="project-class" id="Aiml">
         <h2>AI/ML</h2>
+        <div className="project-item" data-aos="fade-down">
+          <h3>FACE EMOTION DETECTION</h3>
+          <p>
+            <p>
+              Developed a Face Emotion Detection model using Deep Learning and
+              Computer Vision techniques. The model is built on a{" "}
+              <strong>ResNet-18</strong> architecture implemented with{" "}
+              <span className="tool">
+                <SiPytorch /> PyTorch
+              </span>
+              , trained to classify facial expressions into 7 distinct emotion
+              categories. It processes both static images and real-time video
+              streams using{" "}
+              <span className="tool">
+                <SiOpencv /> OpenCV
+              </span>{" "}
+              for face detection and frame handling, and{" "}
+              <span className="tool">
+                <SiNumpy /> NumPy
+              </span>{" "}
+              for efficient numerical operations. This project demonstrates the
+              application of convolutional neural networks (CNNs) in emotion
+              recognition from visual input, suitable for both image analysis
+              and live emotion tracking.
+            </p>
+          </p>
+
+          <a
+            href="https://github.com/AbrarAhmed435/Real_Time_Emotion_Detection.git"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-link"
+          >
+            🔗 View GitHub Repo
+          </a>
+
+          <img src="emotion.webp" alt="face Scan" />
+        </div>
         <div className="project-item" data-aos="fade-down">
           <h3>HEART DISEASE ESTIMATE</h3>
           <p>
@@ -278,6 +327,10 @@ export default function Projects() {
           <img src="abalone.jpg" alt="abalone IMAGE" />
         </div>
       </div>
+      <div className="project-class" id="fullstack">
+        <h3>fullstack</h3>
+      </div>
+    </div>
     </div>
   );
 }

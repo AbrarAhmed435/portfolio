@@ -68,7 +68,6 @@ export default function Home() {
               <img src="react-svgrepo-com.svg" alt="" />
               <p>REACT</p>
             </div>
-            
 
             <div className="skill-element" data-aos="fade-down">
               {/*  <FaReact color="#61dafb" size={40} /> */}
@@ -92,10 +91,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-         <div className="skill-class" data-aos="fade-down">
+        <div className="skill-class" data-aos="fade-down">
           <h4>BACKEND</h4>
           <div className="skill-box">
-             <div className="skill-element" data-aos="fade-down">
+            <div className="skill-element" data-aos="fade-down">
               {/*  <FaReact color="#61dafb" size={40} /> */}
               <img src="icons8-c (2).svg" alt="" />
               <p>C</p>
@@ -115,7 +114,6 @@ export default function Home() {
               <img src="django-svgrepo-com.svg" alt="" />
               <p>Django</p>
             </div>
-            
           </div>
         </div>
         <div className="skill-class" data-aos="fade-down">
@@ -172,7 +170,6 @@ export default function Home() {
               <p>SCIKIT LEARN</p>
             </div>
           </div>
-          
         </div>
         <div className="skill-class" data-aos="fade-down">
           <h4>TOOLS AND IDEs</h4>
@@ -184,13 +181,19 @@ export default function Home() {
             </div>
             <div className="skill-element" data-aos="fade-down">
               {/*  <FaReact color="#61dafb" size={40} /> */}
-              <img src="jupy.svg" alt="" />
-              <p>JUPYTER<br></br>NOTEBOOK</p>
+              <img src="icons8-jupyter.svg" alt="" />
+              <p>
+                JUPYTER<br></br>NOTEBOOK
+              </p>
             </div>
             <div className="skill-element" data-aos="fade-down">
               {/*  <FaReact color="#61dafb" size={40} /> */}
-              <img src="googleco.svg" alt="" />
-              <p>GOOGLE<br/>COLABS</p>
+              <img src="colabs.svg" alt="" />
+              <p>
+                GOOGLE
+                <br />
+                COLABS
+              </p>
             </div>
             <div className="skill-element" data-aos="fade-down">
               {/*  <FaReact color="#61dafb" size={40} /> */}
@@ -214,53 +217,53 @@ export default function Home() {
             </div>
             <div className="skill-element" data-aos="fade-down">
               {/*  <FaReact color="#61dafb" size={40} /> */}
-              <img src="hug.svg" alt="" />
-              <p>HUGGING <br/>FACE</p>
+              <img src="hug2.svg" alt="" />
+              <p>
+                HUGGING <br />
+                FACE
+              </p>
             </div>
             <div className="skill-element" data-aos="fade-down">
               {/*  <FaReact color="#61dafb" size={40} /> */}
-              <img src="thunder-client.svg" alt="" />
+              <img src="thunder4.svg" alt="" />
               <p>THUNDER CLIENT</p>
             </div>
-            
           </div>
-          
         </div>
         {/* Add more skill cards here */}
       </div>
       <div className="brief-project" data-aos="zoom-in">
-          <h2 style={{ textDecoration: "underline" }}>
-            My Projects
-            <br />
-            <br />
-          </h2>
-          <p style={{ fontSize: "1.2rem" }}>
-            Projects building is something which is love to do whether it's Full
-            Stack of AI i have dived deep into both.
-            <Link to="/projects" className="knowmore">
-              {" "}
-              Know more
-            </Link>
-          </p>
-        </div>
+        <h2 style={{ textDecoration: "underline" }}>
+          My Projects
+          <br />
+          <br />
+        </h2>
+        <p style={{ fontSize: "1.2rem" }}>
+          Projects building is something which is love to do whether it's Full
+          Stack of AI i have dived deep into both.
+          <Link to="/projects" className="knowmore">
+            {" "}
+            Know more
+          </Link>
+        </p>
+      </div>
       <div className="brief-history" data-aos="zoom-in">
-          <h2 style={{ textDecoration: "underline" }}>
-            Brief History About Me
-            <br />
-            <br />
-          </h2>
-          <p style={{ fontSize: "1.2rem" }}>
-            From writing my first “Hello World” in C++ to developing full-stack
-            websites and ML models, I’ve always been driven by the urge to
-            create and learn. I'm currently focused on full-stack development
-            and AI applications.
-            <Link to="/about" className="knowmore">
-              {" "}
-              Know more
-            </Link>
-          </p>
-        </div>
-        
+        <h2 style={{ textDecoration: "underline" }}>
+          Brief History About Me
+          <br />
+          <br />
+        </h2>
+        <p style={{ fontSize: "1.2rem" }}>
+          From writing my first “Hello World” in C++ to developing full-stack
+          websites and ML models, I’ve always been driven by the urge to create
+          and learn. I'm currently focused on full-stack development and AI
+          applications.
+          <Link to="/about" className="knowmore">
+            {" "}
+            Know more
+          </Link>
+        </p>
+      </div>
 
       {/* </div> */}
     </div>

@@ -11,6 +11,10 @@ body{
  /*  max-width: 100%; */
 }
 /* --- Base Navbar Styling --- */
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar {
     display: flex;
     align-items: center;
@@ -166,6 +170,49 @@ body{
 .Contact{
   margin-top: 60px;
 }
+.project-nav {
+  background-color: #0fc2c2;
+  display: flex;
+  position: fixed;
+  top: 46px;
+  width: 100%;
+  padding: 12px 20px;
+  justify-content: center;
+  gap: 30px;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.project-nav a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.project-nav a:hover {
+  color: #000000;
+}
+
+.project-nav a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background: black;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.project-nav a:hover::after {
+  width: 100%;
+}
+
 .outer-container {
   display: flex;
   flex-wrap: wrap;
@@ -365,14 +412,22 @@ body{
   background: #f9f9f9;
   min-height: 100vh;
   width: 100%;
+  /* border:2px solid yellow; */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* border: 20px solid greenyellow; */
+  margin-top: 100px;
 }
 
 /* Project Section */
 .project-class {
   max-width: 1100px;
   margin: auto;
+  margin-bottom: 30px;
 }
+#fullstack {
+  scroll-margin-top: 80px; /* adjust to your navbar height */
+}
+
 
 .project-class h2 {
   font-size: 2.5rem;
