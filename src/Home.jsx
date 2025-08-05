@@ -30,7 +30,7 @@ export default function Home() {
               <Typewriter
                 words={[
                   "Full Stack Developer",
-                  "Web Explorer",
+                  "Tech Explorer",
                   "AI Enthusiast",
                 ]}
                 loop={0}

@@ -23,7 +23,6 @@ export default function Navbar() {
         <li><NavLink to='/' className='navlinks'>Home</NavLink></li>
         <li><NavLink to='/about' className='navlinks'>About</NavLink></li>
         <li><NavLink to='/projects' className='navlinks'>Projects</NavLink></li>
-        <li><NavLink to='/contact' className='navlinks'>Contact</NavLink></li>
         <li><NavLink to='/others' className='navlinks'>Others</NavLink></li>
       </ul>
 
