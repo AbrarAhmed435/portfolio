@@ -1,7 +1,9 @@
 import React from "react";
 import emailjs from "emailjs-com";
+import { useState } from "react";
 
 const ContactForm = () => {
+      const [connect, setConnect] = useState(false);
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -16,6 +18,7 @@ const ContactForm = () => {
         (result) => {
           alert("Message sent successfully!");
           e.target.reset(); // Clear the form
+          setConnect(true)
         },
         (error) => {
           alert("Something went wrong, please try again.");
@@ -37,6 +40,7 @@ const ContactForm = () => {
       <input type="email" name="email" required />
 
       <button type="submit">Send</button>
+      {connect?<p style={{color:'green'}}>✅Congratulations we are friends now</p>:null}
     </form>
     </div>
   );
