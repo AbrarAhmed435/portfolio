@@ -1,7 +1,8 @@
-import './Navbar.css';
+
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import logo from '/logo.png'; // Use logo from public folder or src
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -26,7 +27,7 @@ export default function Navbar() {
         <li><NavLink to='/others' className='navlinks'>Others</NavLink></li>
       </ul>
 
-      <button className='nav-connect'>Connect With Me</button>
+      <button className='nav-connect'><Link className='con-text' to ='/contactform'>Connect with me</Link></button>
     </div>
   );
 }

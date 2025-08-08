@@ -1,11 +1,16 @@
 import React from "react";
 import emailjs from "emailjs-com";
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { useState } from "react";
 
 const ContactForm = () => {
       const [connect, setConnect] = useState(false);
+      const [send,setSend]=useState("Send")
   const sendEmail = (e) => {
     e.preventDefault();
+    setSend("Connecting...");
+
 
     emailjs
       .sendForm(
@@ -16,15 +21,20 @@ const ContactForm = () => {
       )
       .then(
         (result) => {
-          alert("Message sent successfully!");
+          toast.success("You are now connected")
+        
           e.target.reset(); // Clear the form
           setConnect(true)
+          setSend("Send")
         },
         (error) => {
           alert("Something went wrong, please try again.");
+          toast.error("Something Went wrong😓")
           console.error(error);
+          setSend("Send")
         }
       );
+      
   };
 
   return (
@@ -39,9 +49,10 @@ const ContactForm = () => {
       <label>Email:</label>
       <input type="email" name="email" required />
 
-      <button type="submit">Send</button>
+      <button type="submit">{send}</button>
       {connect?<p style={{color:'green'}}>✅Congratulations we are friends now</p>:null}
     </form>
+    <ToastContainer position="top-right" autoClose={3000} />
     </div>
   );
 };
