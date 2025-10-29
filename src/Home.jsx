@@ -23,7 +23,7 @@ export default function Home() {
           <img src="/undraw_coding_joxb.svg" alt="Coding Illustration" />
         </div>
         <div className="box">
-          <h2 className="heading">Hi,. I am Abrar</h2>
+          <h2 className="heading">Hi, I am Abrar</h2>
           <h3 className="introduction">
             I am an IT Student &{" "}
             <span className="highlighted">
@@ -96,6 +96,16 @@ export default function Home() {
           <div className="skill-box">
             <div className="skill-element" data-aos="fade-down">
               {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="django-svgrepo-com.svg" alt="" />
+              <p>Django</p>
+            </div>
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="fastapi.svg" alt="" />
+              <p>FastApii</p>
+            </div>
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
               <img src="icons8-c (2).svg" alt="" />
               <p>C</p>
             </div>
@@ -109,11 +119,7 @@ export default function Home() {
               <img src="icons8-python.svg" alt="" />
               <p>python</p>
             </div>
-            <div className="skill-element" data-aos="fade-down">
-              {/*  <FaReact color="#61dafb" size={40} /> */}
-              <img src="django-svgrepo-com.svg" alt="" />
-              <p>Django</p>
-            </div>
+            
           </div>
         </div>
         <div className="skill-class" data-aos="fade-down">
