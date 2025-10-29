@@ -127,6 +127,17 @@ export default function Home() {
           <div className="skill-box">
             <div className="skill-element" data-aos="fade-down">
               {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="elephant (1).svg" alt="" />
+              <p>POSTGRESQL</p>
+            </div>
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="mongo-svgrepo-com.svg" alt="" />
+              <p>MONGODB</p>
+            </div>
+            
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
               <img src="redux-logo-svgrepo-com.svg" alt="" />
               <p>REDUX</p>
             </div>
@@ -135,16 +146,7 @@ export default function Home() {
               <img src="database-svgrepo-com.svg" alt="" />
               <p>SQL</p>
             </div>
-            <div className="skill-element" data-aos="fade-down">
-              {/*  <FaReact color="#61dafb" size={40} /> */}
-              <img src="mongo-svgrepo-com.svg" alt="" />
-              <p>MONGODB</p>
-            </div>
-            <div className="skill-element" data-aos="fade-down">
-              {/*  <FaReact color="#61dafb" size={40} /> */}
-              <img src="elephant (1).svg" alt="" />
-              <p>POSTGRESQL</p>
-            </div>
+            
           </div>
         </div>
         <div className="skill-class" data-aos="fade-down">
