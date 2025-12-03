@@ -23,7 +23,7 @@ export default function Home() {
           <img src="/undraw_coding_joxb.svg" alt="Coding Illustration" />
         </div>
         <div className="box">
-          <h2 className="heading">Hi, I am Abrar</h2>
+          <h2 className="heading">Hi, My name is  Abrar</h2>
           <h3 className="introduction">
             I am an IT Student &{" "}
             <span className="highlighted">
