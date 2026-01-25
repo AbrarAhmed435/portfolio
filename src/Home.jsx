@@ -23,15 +23,15 @@ export default function Home() {
           <img src="/undraw_coding_joxb.svg" alt="Coding Illustration" />
         </div>
         <div className="box">
-          <h2 className="heading">Hi, My name is  Abrar</h2>
+          <h2 className="heading">Hi, My name is Abrar</h2>
           <h3 className="introduction">
             I am an IT Student &{" "}
             <span className="highlighted">
               <Typewriter
                 words={[
-                  "Full Stack Developer",
-                  "Tech Explorer",
-                  "AI Enthusiast",
+                  "Backend Developer",
+                  "Agentic AI Engineer",
+                  "Machine Learning Researcher",
                 ]}
                 loop={0}
                 cursor
@@ -119,7 +119,6 @@ export default function Home() {
               <img src="icons8-python.svg" alt="" />
               <p>python</p>
             </div>
-            
           </div>
         </div>
         <div className="skill-class" data-aos="fade-down">
@@ -135,7 +134,7 @@ export default function Home() {
               <img src="mongo-svgrepo-com.svg" alt="" />
               <p>MONGODB</p>
             </div>
-            
+
             <div className="skill-element" data-aos="fade-down">
               {/*  <FaReact color="#61dafb" size={40} /> */}
               <img src="redux-logo-svgrepo-com.svg" alt="" />
@@ -146,7 +145,6 @@ export default function Home() {
               <img src="database-svgrepo-com.svg" alt="" />
               <p>SQL</p>
             </div>
-            
           </div>
         </div>
         <div className="skill-class" data-aos="fade-down">
