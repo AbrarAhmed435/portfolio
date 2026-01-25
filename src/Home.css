@@ -1,0 +1,42 @@
+.ContactLinks {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.ContactLinks a {
+  color: #ffffff; /* or your theme color */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.ContactLinks a:hover {
+  color: #00bcd4; /* accent color */
+  transform: translateY(-4px);
+}
+
+.ContactLinks svg {
+  vertical-align: middle;
+}
+
+
+.resume {
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  border: 2px solid #487e41;
+  color: #f1f5f0;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  font-size: 2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  max-width: 200px;
+  background-color: rgb(181, 20, 187);
+}
+
+.resume:hover {
+  background-color: #e90e19;
+  color: #0f172a; /* dark background */
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 188, 212, 0.35);
+}

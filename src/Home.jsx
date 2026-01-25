@@ -4,7 +4,13 @@ import "aos/dist/aos.css"; // AOS styles
 import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 import { FaGithubSquare } from "react-icons/fa";
+import { PiGithubLogoThin } from "react-icons/pi";
 import { useEffect } from "react";
+import { GrLinkedinOption } from "react-icons/gr";
+import { VscGithubInverted } from "react-icons/vsc";
+import { IoIosMail } from "react-icons/io";
+import "./Home.css";
+import { CiMail } from "react-icons/ci";
 
 /* https://michalsnik.github.io/aos/ */
 export default function Home() {
@@ -25,7 +31,7 @@ export default function Home() {
         <div className="box">
           <h2 className="heading">Hi, My name is Abrar</h2>
           <h3 className="introduction">
-            I am an IT Student &{" "}
+            {/* I am an{" "} */}
             <span className="highlighted">
               <Typewriter
                 words={[
@@ -42,15 +48,40 @@ export default function Home() {
               />
             </span>
           </h3>
-          <a
-            href="https://github.com/AbrarAhmed435/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="github-link"
-          >
-            check out my github profile{" "}
-            <FaGithubSquare style={{ verticalAlign: "middle" }} />
-          </a>
+          <span className="ContactLinks">
+            <a
+              href="https://github.com/AbrarAhmed435/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <VscGithubInverted style={{ fontSize: "2.5rem" }} />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/YOUR_LINKEDIN"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <GrLinkedinOption style={{ fontSize: "2.5rem" }} />
+            </a>
+
+            <a
+              href="mailto:abrarnitsri0@gmail.com?subject=Portfolio Inquiry&body=Hi Abrar,"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IoIosMail style={{ fontSize: "2.5rem" }} />
+            </a>
+          </span>
+          
+            <a
+              href="/Abrar_Riyaz.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="resume"
+            >
+              Resume
+            </a>
         </div>
       </div>
       <h3 className="skill-heading">My Skills</h3>
