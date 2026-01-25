@@ -7,7 +7,11 @@ import { FaGithubSquare } from "react-icons/fa";
 import { PiGithubLogoThin } from "react-icons/pi";
 import { useEffect } from "react";
 import { GrLinkedinOption } from "react-icons/gr";
+import { SiLangchain } from "react-icons/si";
+import { PiGraphBold } from "react-icons/pi";
 import { VscGithubInverted } from "react-icons/vsc";
+import { BsTools } from "react-icons/bs";
+import { SiLeetcode } from "react-icons/si";
 import { IoIosMail } from "react-icons/io";
 import "./Home.css";
 import { CiMail } from "react-icons/ci";
@@ -56,13 +60,19 @@ export default function Home() {
             >
               <VscGithubInverted style={{ fontSize: "2.5rem" }} />
             </a>
-
             <a
-              href="https://www.linkedin.com/in/YOUR_LINKEDIN"
+              href="https://leetcode.com/u/Abrar435/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <GrLinkedinOption style={{ fontSize: "2.5rem" }} />
+              <SiLeetcode style={{ fontSize: "2.5rem" ,color:"#e74b0d"}} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/abrar-ul-riyaz-a7852432a/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <GrLinkedinOption style={{ fontSize: "2.5rem" , color:"#0077B5" }} />
             </a>
 
             <a
@@ -86,6 +96,73 @@ export default function Home() {
       </div>
       <h3 className="skill-heading">My Skills</h3>
       <div className="skills">
+        <div className="skill-class" data-aos="fade-down">
+          <h4>AGENTIC AI</h4>
+          <div className="skill-box">
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="Langchain--Streamline-Simple-Icons.svg" alt="" />
+              <p>LangChain</p>
+            </div>
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="langgraph-color.svg" alt="" />
+              <p>LangGraph</p>
+            </div>
+
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="langsmith-color.svg" alt="" />
+              <p>LangSmith</p>
+            </div>
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="mcp.svg" alt="" />
+              <p>MCP</p>
+            </div>
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="n8n-color.svg" alt="" />
+              <p>n8n</p>
+            </div>
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="crewai-color.svg" alt="" />
+              <p>Crew</p>
+            </div>
+          </div>
+        </div>
+        
+        <div className="skill-class" data-aos="fade-down">
+          <h4>BACKEND</h4>
+          <div className="skill-box">
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="django-svgrepo-com.svg" alt="" />
+              <p>Django</p>
+            </div>
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="fastapi.svg" alt="" />
+              <p>FastApii</p>
+            </div>
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="icons8-c (2).svg" alt="" />
+              <p>C</p>
+            </div>
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="icons8-c.svg" alt="" />
+              <p>C++</p>
+            </div>
+            <div className="skill-element" data-aos="fade-down">
+              {/*  <FaReact color="#61dafb" size={40} /> */}
+              <img src="icons8-python.svg" alt="" />
+              <p>python</p>
+            </div>
+          </div>
+        </div>
         <div className="skill-class" data-aos="fade-down">
           <h4>FRONTEND</h4>
           <div className="skill-box">
@@ -119,36 +196,6 @@ export default function Home() {
               {/*  <FaReact color="#61dafb" size={40} /> */}
               <img src="bootstrap-svgrepo-com.svg" alt="" />
               <p>BOOTSTRAP</p>
-            </div>
-          </div>
-        </div>
-        <div className="skill-class" data-aos="fade-down">
-          <h4>BACKEND</h4>
-          <div className="skill-box">
-            <div className="skill-element" data-aos="fade-down">
-              {/*  <FaReact color="#61dafb" size={40} /> */}
-              <img src="django-svgrepo-com.svg" alt="" />
-              <p>Django</p>
-            </div>
-            <div className="skill-element" data-aos="fade-down">
-              {/*  <FaReact color="#61dafb" size={40} /> */}
-              <img src="fastapi.svg" alt="" />
-              <p>FastApii</p>
-            </div>
-            <div className="skill-element" data-aos="fade-down">
-              {/*  <FaReact color="#61dafb" size={40} /> */}
-              <img src="icons8-c (2).svg" alt="" />
-              <p>C</p>
-            </div>
-            <div className="skill-element" data-aos="fade-down">
-              {/*  <FaReact color="#61dafb" size={40} /> */}
-              <img src="icons8-c.svg" alt="" />
-              <p>C++</p>
-            </div>
-            <div className="skill-element" data-aos="fade-down">
-              {/*  <FaReact color="#61dafb" size={40} /> */}
-              <img src="icons8-python.svg" alt="" />
-              <p>python</p>
             </div>
           </div>
         </div>
