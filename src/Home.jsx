@@ -85,7 +85,7 @@ export default function Home() {
           </span>
           
             <a
-              href="/Abrar_Riyaz.pdf"
+              href="/Abrar_Riyaz_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="resume"
